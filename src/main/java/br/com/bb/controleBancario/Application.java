@@ -1,17 +1,32 @@
 package br.com.bb.controleBancario;
 
+import java.math.BigDecimal;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import br.com.bb.controleBancario.pojo.Conta_Comum;
 import br.com.bb.controleBancario.pojo.Pessoa;
 import br.com.bb.controleBancario.pojo.Pessoa_Fisica;
+import br.com.bb.controleBancario.repositories.ConexaoMySQL;
+import br.com.bb.controleBancario.repositories.PessoaRepository;
 import br.com.bb.controleBancario.view.TelaCadastroPessoa;
 
 public class Application {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException {
 		
-		TelaCadastroPessoa telaCadastroPessoa = new TelaCadastroPessoa();
+		Pessoa p = new Pessoa_Fisica();
+		p.setId(1);
+		
+		PessoaRepository pr = new PessoaRepository();
+		
+		pr.consultar(p);
+		
+		
+		
+		/*TelaCadastroPessoa telaCadastroPessoa = new TelaCadastroPessoa();
 		telaCadastroPessoa.setVisible(true);
 		
 		Pessoa pessoa = new Pessoa_Fisica();
@@ -35,7 +50,7 @@ public class Application {
 		pessoa.setContas(contas);
 		
 		
-		System.out.println(pessoa.toString());
+		System.out.println(pessoa.toString());*/
 		
 		
 		

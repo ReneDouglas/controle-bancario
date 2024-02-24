@@ -5,6 +5,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import com.github.lgooddatepicker.components.DatePicker;
+
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
@@ -117,10 +120,6 @@ public class TelaCadastroPessoa extends JFrame {
 		textField_4.setBounds(270, 204, 247, 25);
 		contentPane.add(textField_4);
 		
-		JButton btnNewButton = new JButton("Salvar");
-		btnNewButton.setBounds(410, 312, 107, 36);
-		contentPane.add(btnNewButton);
-		
 		JComboBox comboBox = new JComboBox();
 		comboBox.setBounds(270, 240, 247, 25);
 		comboBox.addItem("Ativo");
@@ -137,5 +136,15 @@ public class TelaCadastroPessoa extends JFrame {
 		textField_5.setColumns(10);
 		textField_5.setBounds(270, 57, 247, 25);
 		contentPane.add(textField_5);
+		
+		DatePicker dp = new DatePicker();
+		dp.setBounds(270, 270, 247, 25);
+		contentPane.add(dp);
+		
+		JButton btnNewButton = new JButton("Salvar");
+		btnNewButton.setBounds(410, 312, 107, 36);
+		contentPane.add(btnNewButton);
+		
+		
 	}
 }

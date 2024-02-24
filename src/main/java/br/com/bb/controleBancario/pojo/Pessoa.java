@@ -1,19 +1,33 @@
 package br.com.bb.controleBancario.pojo;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 
 public abstract class Pessoa {
 	
+	protected Integer id;
 	protected String nome;
 	protected String endereco;
 	protected String cep;
 	protected String telefone;
-	protected Double renda;
+	protected BigDecimal renda;
 	protected Integer situacao;
 	protected ArrayList<Conta_Comum> contas;
 	
 	public Pessoa() {
 	}
+
+	public Integer getId() {
+		return id;
+	}
+
+
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+
 
 	public String getNome() {
 		return nome;
@@ -47,11 +61,11 @@ public abstract class Pessoa {
 		this.telefone = telefone;
 	}
 
-	public Double getRenda() {
+	public BigDecimal getRenda() {
 		return renda;
 	}
 
-	public void setRenda(Double renda) {
+	public void setRenda(BigDecimal renda) {
 		this.renda = renda;
 	}
 
