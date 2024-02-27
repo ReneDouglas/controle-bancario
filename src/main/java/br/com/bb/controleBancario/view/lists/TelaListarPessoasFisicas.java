@@ -37,7 +37,7 @@ public class TelaListarPessoasFisicas extends JFrame {
 
 	public TelaListarPessoasFisicas() {
 
-		setTitle("Lista de Pessoas Físicas");
+		setTitle("Listar Pessoas Físicas");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 641, 453);
 		setResizable(false);

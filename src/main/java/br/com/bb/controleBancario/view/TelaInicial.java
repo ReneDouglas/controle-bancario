@@ -24,7 +24,7 @@ public class TelaInicial extends JFrame{
 	private JPanel contentPane;
 	
 	public TelaInicial() {
-		setTitle("Cadastro de Pessoas");
+		setTitle("Sistema de Controle Bancário");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 650, 431);
 		setResizable(false);

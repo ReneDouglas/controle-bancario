@@ -31,7 +31,7 @@ public class TelaCadastroPessoaJuridica extends JFrame {
 	private JTextField fieldRenda;
 
 	public TelaCadastroPessoaJuridica() {
-		setTitle("Pessoa Jurídica");
+		setTitle("Cadastrar Pessoa Jurídica");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 715, 431);
 		setResizable(false);
