@@ -1,17 +1,13 @@
-package br.com.bb.controleBancario.pojo;
+package br.com.bb.controleBancario.dto;
 
-public class Pessoa_Juridica extends Pessoa{
+public class PessoaJuridicaDTO extends PessoaDTO{
 	
 	private String cnpj;
 	
-	public Pessoa_Juridica() {
+	public PessoaJuridicaDTO() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Integer validar_cnpj() {
-		return null;
-	}
-
 	public String getCnpj() {
 		return cnpj;
 	}

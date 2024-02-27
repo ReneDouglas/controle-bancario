@@ -3,7 +3,7 @@ package br.com.bb.controleBancario.pojo;
 import java.util.Date;
 import java.util.List;
 
-public class Conta_Comum {
+public class ContaComum {
 	
 	protected Long nro_conta;
 	protected Date data_abertura;
@@ -13,7 +13,7 @@ public class Conta_Comum {
 	protected Double saldo = 0.0;
 	protected List<Movimento> movimentos;
 	
-	public Conta_Comum() {
+	public ContaComum() {
 	}
 	
 	public Double saldo() {

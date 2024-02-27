@@ -1,10 +1,10 @@
 package br.com.bb.controleBancario.pojo;
 
-public class Conta_Especial extends Conta_Comum{
+public class ContaEspecial extends ContaComum{
 	
 	private Double limite_conta;
 	
-	public Conta_Especial() {
+	public ContaEspecial() {
 	}
 	
 	public Double juros_conta(Double juros) {

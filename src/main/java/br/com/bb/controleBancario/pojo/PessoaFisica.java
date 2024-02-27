@@ -1,11 +1,12 @@
 package br.com.bb.controleBancario.pojo;
 
-public class Pessoa_Fisica extends Pessoa{
+public class PessoaFisica extends Pessoa{
 	
 	private String cpf;
 	private String rg;
+	private String sexo;
 	
-	public Pessoa_Fisica() {
+	public PessoaFisica() {
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -27,6 +28,14 @@ public class Pessoa_Fisica extends Pessoa{
 
 	public void setRg(String rg) {
 		this.rg = rg;
+	}
+	
+	public String getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
 	}
 
 	@Override

@@ -1,33 +1,25 @@
-package br.com.bb.controleBancario.pojo;
+package br.com.bb.controleBancario.dto;
 
-import java.math.BigDecimal;
-import java.util.ArrayList;
-
-public abstract class Pessoa {
+public abstract class PessoaDTO {
 	
-	protected Integer id;
+	protected String id;
 	protected String nome;
 	protected String endereco;
 	protected String cep;
 	protected String telefone;
-	protected BigDecimal renda;
-	protected Integer situacao;
-	protected ArrayList<ContaComum> contas;
+	protected String renda;
+	protected String situacao;
 	
-	public Pessoa() {
+	public PessoaDTO() {
 	}
-
-	public Integer getId() {
+	
+	public String getId() {
 		return id;
 	}
 
-
-
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
-
-
 
 	public String getNome() {
 		return nome;
@@ -61,30 +53,20 @@ public abstract class Pessoa {
 		this.telefone = telefone;
 	}
 
-	public BigDecimal getRenda() {
+	public String getRenda() {
 		return renda;
 	}
 
-	public void setRenda(BigDecimal renda) {
+	public void setRenda(String renda) {
 		this.renda = renda;
 	}
 
-	public Integer getSituacao() {
+	public String getSituacao() {
 		return situacao;
 	}
 
-	public void setSituacao(Integer situacao) {
+	public void setSituacao(String situacao) {
 		this.situacao = situacao;
 	}
-
-	public ArrayList<ContaComum> getContas() {
-		return contas;
-	}
-
-	public void setContas(ArrayList<ContaComum> contas) {
-		this.contas = contas;
-	}
-	
-	
 
 }

@@ -2,11 +2,11 @@ package br.com.bb.controleBancario.pojo;
 
 import java.util.Date;
 
-public class Conta_Poupanca extends Conta_Comum{
+public class ContaPoupanca extends ContaComum{
 	
 	private Date data_aniver;
 	
-	public Conta_Poupanca() {
+	public ContaPoupanca() {
 	}
 	
 	public Double rendimento(Double r) {
