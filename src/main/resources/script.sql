@@ -28,3 +28,19 @@ create table pessoas_juridicas(
 	primary key(id_pessoa),
 	foreign key (id_pessoa) references pessoas(id) on delete cascade
 );
+
+create table contas_bancarias(
+	id int not null auto_increment,
+	tipo_conta varchar(255) default 'Comum',
+	nro_conta bigint not null unique,
+	data_abertura datetime(6) not null,
+	data_encerramento datetime(6),
+	situacao int not null default 1,
+	senha int(6) not null,
+	saldo decimal(12,2) default 0.0,
+	limite_conta decimal(12,2),
+	data_aniversario date,
+	pessoa_id int not null,
+	primary key(id),
+	foreign key (pessoa_id) references pessoas(id)
+);

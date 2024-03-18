@@ -220,8 +220,9 @@ public class TelaCadastroPessoaFisica extends JFrame {
 		btnSalvar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				ArrayList<CampoComErro> erros = preencher_e_validar();
-		
+				//ArrayList<CampoComErro> erros = preencher_e_validar();
+				ArrayList<CampoComErro> erros = null;
+				System.out.println("oi");
 				if(!erros.isEmpty()) {
 					
 					mostrarErros(erros);

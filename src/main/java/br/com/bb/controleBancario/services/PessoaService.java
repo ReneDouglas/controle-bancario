@@ -27,10 +27,8 @@ public class PessoaService {
 		pf.setSituacao(1);
 		
 		repository = new PessoaRepository();
-		repository.inserir(pf);
-		
-		return null;
-		
+		return repository.inserir(pf);
+
 	}
 	
 	public ArrayList<PessoaFisicaDTO> listarPessoasFisicas(){
